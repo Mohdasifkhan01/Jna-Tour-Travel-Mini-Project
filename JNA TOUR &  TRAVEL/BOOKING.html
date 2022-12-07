@@ -1,0 +1,273 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body { 
+       background-color:black;
+       background-size: cover;
+     }
+	 footer{ 
+  padding:3px;
+  background-color:#c2b280;
+  color:white;
+  text-align:center-left;
+  }
+h2 {
+     color: #c2b280;
+     text-decoration: none;
+   }
+
+p {
+    font-family: Couruer New;
+    font-size:120%
+  }
+a {
+    text-decoration:none;
+    color:#c2b280;
+	font-size:18px;
+	padding:16px;
+  }
+   .button{
+   color:black;
+   font-size:16px;
+   padding:15px 20px;
+   cursor:pointer;
+   background-color:#00ff00;
+   font-family:Couruer New;
+    border-radius: 15px;
+  box-shadow: 0 9px #c2b280;
+   }
+.dropbtn {
+  background-color:black;
+  color: #c2b280;
+  padding: 16px;
+  font-size: 18px;
+  font-family:Couruer New;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #c2b280;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:black}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover.dropbtn {
+  background-color: #3e8e41;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #c2b280;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #00ff00;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #00ff00;
+}
+
+.container {
+  border-radius: 5px;
+  color:#c2b280;
+  background-color: black;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+<img src="JNA.jpg" >
+  <a href="FHOME.html">HOME</a>
+  <a href="ABT.html">ABOUT JNA TOUR & TRAVEL</a>
+
+<div class="dropdown">
+  <button class="dropbtn">SERVICES</button>
+  <div class="dropdown-content">
+  <a href="AIR.html">AIR</a>
+  <a href="HOTELS.html">HOTELS</a>
+  <a href="ROAD.html">ON THE ROAD</a>
+  </div>
+  <a href="TEAM.html">TEAM</a>
+  <a href="CT.html">CONTACT US</a>
+   <a href="BOOKING.html"><button class="button">CLICK HERE FOR BOOKING </button></a>
+
+</div>
+
+
+<h2>REGISTRATION FORM</h2>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="name">NAME:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="name" placeholder="Your name..">
+      </div>
+    </div>
+     <div class="row">
+      <div class="col-25">
+        <label for="address">ADDRESS:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="address" name="address" placeholder="Your address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">PHONE NUMBER:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Your phone number..">
+      </div>
+    </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="email">EMAIL:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Your email..">
+      </div>
+    </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="city">CITY:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="city" name="city" placeholder="Your city..">
+      </div>
+    </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="pin"> PIN CODE:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="pin" name="pin" placeholder="Your pin code..">
+      </div>
+    </div>
+	  <div class="row">
+      <div class="col-25">
+        <label for="state">STATE:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="state" name="state" placeholder="Your state..">
+      </div>
+    </div>
+	<div class="row">
+      <div class="col-25">
+        <label for="package">PACKAGE:</label>
+      </div>
+	 <div class="col-75">
+         <select id="package" name="package">
+          <option value="goa">GOA BY AIR RS 40000 </option>
+		  <option value="goa">GOA BY ROAD RS 30000</option>
+          <option value="kashmir">KASHMIR BY AIR RS 40000</option>
+          <option value="kashmir">KASHMIR BY ROAD RS 30000</option>
+          <option value="simla">SIMLA BY AIR RS 32000</option>
+          <option value="simla">SIMLA BY ROAD RS 25000 </option>
+		  <option value="agra">AGRA BY AIR RS 20000</option>
+		  <option value="agra">AGRA BY ROAD RS 12000</option>
+        </select>
+      </div>
+    </div>
+
+	 <div class="row">
+      <div class="col-25">
+        <label for="payment">PAYMENT OPYTION:</label>
+      </div>
+      <div class="col-75">
+        <select id="payment " name="payment">
+          <option  value="paytm"><a href="https://www.facebook.com/Jna-foundation-163704057595585"> PAYTM</a>
+          <option value="google pay">GOOGLE PAY</option>
+          <option value="bank">BANK</option>
+        </select>
+      </div>
+    </div>
+   
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<footer>
+<p>Copyright© 2021
+  <a href="https://www.facebook.com/Jna-foundation-163704057595585">
+         <img src="https://img.icons8.com/nolan/64/000000/facebook-new.png">
+      </a> <a href="https://www.instagram.com/mohdasifkhan01/">
+         <img src="https://img.icons8.com/nolan/64/000000/instagram-new.png">
+      </a> 
+	  </p>
+	  
+
+</footer>
+</body>
+</html>
